@@ -6,7 +6,7 @@ Name: hunspell-te
 Summary: Telugu hunspell dictionaries
 %define upstreamid 20050929
 Version: 0.%{upstreamid}
-Release: 10%{?dist}
+Release: 11%{?dist}
 Group:          Applications/Text
 ##Upstream is unresponsive so unable to verify license version
 License:        GPL+
@@ -39,6 +39,9 @@ cp -p *.dic *.aff $RPM_BUILD_ROOT/%{_datadir}/myspell
 %{_datadir}/myspell/*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.20050929-11
+- Mass rebuild 2013-12-27
+
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.20050929-10
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
